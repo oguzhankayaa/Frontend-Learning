@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+}
+
+
+.site-section{
+    background-color:lightpink;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 30px;
+    
+
+}
+
+.brand-header{
+    grid-area: title;
+    background-color:rgb(93, 44, 9);
+}
+.items-section{
+    grid-area: items;
+    margin-left: 10px;
+}
+.name-section{
+    grid-area: name;
+    margin-right: 10px;
+}
+.payment-section{
+    grid-area: payment;
+    margin-right: 10px;
+}
+.total-section{
+    grid-area: total;
+}
+.order-section{
+    grid-area: order;
+    background-color: pink;
+
+}
+
+.page{
+    display: grid;
+    grid-template-areas:
+    "title title title title title title"
+    "items items items name name name"
+    "items items items payment payment payment"
+    ". . total total . ."
+    "order order order order order order" ;
+}
+
+.brand{
+    text-align: center;
+    color: khaki;
+}
+
+
+.header-logo{
+    width: 20px;
+    height: fit-content;
+}
+
